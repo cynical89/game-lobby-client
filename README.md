@@ -1,15 +1,30 @@
 # Game Lobby Client
 This is a sample of a game lobby for multiplayer online games.
 
-## To Use
+* This is a 3 part project. This is the client which opens the game Executable. It requires the Game-Lobby-Server and the Unity-Client
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+## Requirements
+* [Node.js](https://nodejs.org/en/) (Version 5 and up recommended)
 
+* [Game-Lobby-Server](https://github.com/cynical89/game-lobby-server) (Server for the lobby client)
+* [Unity Client](https://github.com/cynical89) (Unity game this client executes)
+
+### Installation
+
+* Clone down the repository.
 ```
-# Clone this repository
 git clone https://github.com/cynical89/game-lobby-client.git
-# Go into the repository
-cd game-lobby-client
-# Install dependencies and run the app
-npm install && npm start
 ```
+
+* Install packages (from inside the koa-starer folder).
+```
+npm install
+```
+
+* Start it up.
+```
+npm start
+```
+
+* Enjoy!
+
