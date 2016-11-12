@@ -5,9 +5,10 @@ This is a sample of a game lobby for multiplayer online games.
 
 ## Requirements
 * [Node.js](https://nodejs.org/en/) (Version 5 and up recommended)
+* [Unity3D](https://unity3d.com/get-unity/download) (Version 5 and up.)
 
 * [Game-Lobby-Server](https://github.com/cynical89/game-lobby-server) (Server for the lobby client)
-* [Unity Client](https://github.com/cynical89) (Unity game this client executes)
+* [Unity Client](https://github.com/cynical89/unity-client) (Unity game this client executes)
 
 ### Installation
 
@@ -16,7 +17,7 @@ This is a sample of a game lobby for multiplayer online games.
 git clone https://github.com/cynical89/game-lobby-client.git
 ```
 
-* Install packages (from inside the koa-starer folder).
+* Install packages (from inside the game-lobby-client folder).
 ```
 npm install
 ```
@@ -27,4 +28,3 @@ npm start
 ```
 
 * Enjoy!
-
