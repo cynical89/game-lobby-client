@@ -1,4 +1,9 @@
+# Node Module Foler
 node_modules
 
+# Game Executables
 bin/game_Data
 bin/*.exe
+
+# Config for secrets
+config.json
