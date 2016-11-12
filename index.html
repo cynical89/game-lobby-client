@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World!</title>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+		<!-- All of the Node.js APIs are available in this renderer process. -->
+		We are using node <script>document.write(process.versions.node)</script>,
+		Chromium <script>document.write(process.versions.chrome)</script>,
+		and Electron <script>document.write(process.versions.electron)</script>.
+		<br /><br />
+		<button id="startButton">Start Game</button>
+	</body>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script src="./javascript/jquery.min.js"></script>
+	<script src="./javascript/startGame.js"></script>
+
+	<script>
+		// You can also require other files to run in this process
+		require('./renderer.js')
+	</script>
+
+<script>if (window.module) module = window.module;</script>
+
 </html>

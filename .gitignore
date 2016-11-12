@@ -1,1 +1,4 @@
 node_modules
+
+bin/game_Data
+bin/*.exe
