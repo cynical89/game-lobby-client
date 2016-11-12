@@ -22,6 +22,8 @@ git clone https://github.com/cynical89/game-lobby-client.git
 npm install
 ```
 
+* Make sure the Unity Game Client has been built and the executable and game_Data have been placed in the /bin folder
+
 * Start it up.
 ```
 npm start
