@@ -25,7 +25,7 @@ $("#startButton").on("click", function(e) {
 
 // this function calls our executable with an argument to pass the game ID
 function startGame(id) {
-	execFile("./bin/game", [`-g ${id}`], function(err, data) {
+	execFile("./bin/game", [`--args-g ${id}`], function(err, data) {
 		if (err) {
 			console.log(err);
 		} else {
