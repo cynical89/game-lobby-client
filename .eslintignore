@@ -1,2 +1,4 @@
 node_modules/*
 coverage/*
+bootstrap.min.js
+jquery.min.js
