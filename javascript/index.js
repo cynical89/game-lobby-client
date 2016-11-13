@@ -10,7 +10,7 @@ $("#signin").on("click", (e) => {
 		dataType: "json",
 		url: `${config.site.apiHost}:${config.site.port}/login`,
 		data: {username: username, password: password}
-	}).done(function(result) {
+	}).done((result) => {
 		if (result.error === true) {
 			alert(result.message);
 			return console.error(result.message);
@@ -18,7 +18,7 @@ $("#signin").on("click", (e) => {
 		// do something with the success, like show a link
 		console.log(result);
 		window.location = "lobby.html";
-	}).fail(function(err) {
+	}).fail((err) => {
 		// do something with the failure, like laugh at the user
 		window.alert("hahahahaha! NO!");
 		console.error(err);

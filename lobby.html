@@ -7,40 +7,59 @@
 		<link href="./css/bootstrap-social.css" rel="stylesheet">
 		<link href="./css/font-awesome.min.css" rel="stylesheet">
 		<link href="./css/login.css" rel="stylesheet">
+		<link href="./css/sidebar.css" rel="stylesheet">
 	</head>
 	<body>
-		<div id="fullscreen_bg" class="fullscreen_bg"/>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="./lobby.html">
-					<img alt="Brand" src="./images/favicon.ico">
-				</a>
-				<a class="navbar-brand" href="./lobby.html">
-					Game Client
-				</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-primary" href="#">Link1</a></li>
-				<li><a class="btn btn-primary" href="#">Link2</a></li>
-				<li><a class="btn btn-primary" href="#">Link3</a></li>
-				<li><a class="btn btn-primary" href="#">Link4</a></li>
-				<li><a class="btn btn-default">
-					User Information here
-				</a></li>
-      </ul>
-		</div>
-		</nav>
-		<div class="container">
-			<p class="lead">This is the main lobby screen</p>
-		</div>
+		<div class="fullscreen_bg" id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<li class="sidebar-brand">
+						<a href="#" id="userInfo">{{username}}</a></li>
+						<div id="placeholder">
+						</div>
+					</ul>
+				</div>
+				<!-- /#sidebar-wrapper -->
+				<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<div class="container-fluid">
+						<!-- Bottom Nav Bar -->
+						<nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+							<div class="container">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="./lobby.html">
+										<img alt="Brand" src="./images/favicon.ico">
+									</a>
+									<a class="navbar-brand" href="./lobby.html">
+										Game Client
+									</a>
+									<button class="btn btn-default navbar-btn">Button 1</button>
+									<button class="btn btn-default navbar-btn">Button 1</button>
+									<button class="btn btn-default navbar-btn">Button 1</button>
+									<a href="#menu-toggle" class="btn btn-success navbar-btn" id="menu-toggle">Friends list</a>
+								</div>
+							</div>
+						</nav>
+						<!-- end bottom navbar -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h1>Main lobby screen</h1>
+								<p>This is the main screen that will hold all your news updates and others.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
 	</body>
 
 	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
 	<script src="./javascript/jquery.min.js"></script>
 	<script src="./javascript/bootstrap.min.js"></script>
-	<script src="./javascript/index.js"></script>
+	<script src="./javascript/lobby.js"></script>
 
 	<!-- added scripts for testing -->
 	<script src="./javascript/startGame.js"></script>
