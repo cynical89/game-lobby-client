@@ -23,4 +23,4 @@ $("#signin").on("click", (e) => {
 		window.alert("hahahahaha! NO!");
 		console.error(err);
 	});
-})
+});

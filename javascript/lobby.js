@@ -1,7 +1,7 @@
 "use strict";
 
-$(document).ready(function() {
-getUserInfo();
+$(document).ready(() => {
+	getUserInfo();
 });
 
 $("#menu-toggle").on("click", (e) => {
@@ -23,12 +23,12 @@ function getUserInfo() {
 		console.log(result);
 		$("#userInfo").html(result.username);
 		if (result.friends.length <= 0) {
-			$("#placeholder").append("<li><p class='text-muted'>You currently have no friends! :(</p></li>")
+			$("#placeholder").append("<li><p class='text-muted'>You currently have no friends! :(</p></li>");
 		} else {
-		for (const friend of result.friends) {
-			$("#placeholder").append(`<li>${friend}</li>`)
+			for (const friend of result.friends) {
+				$("#placeholder").append(`<li>${friend}</li>`);
+			}
 		}
-	}
 	}).fail((err) => {
 		// do something with the failure, like laugh at the user
 		window.alert("hahahahaha! NO!");
