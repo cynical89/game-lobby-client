@@ -17,6 +17,7 @@ $("#signin").on("click", (e) => {
 		}
 		// do something with the success, like show a link
 		console.log(result);
+		window.location = "lobby.html";
 	}).fail(function(err) {
 		// do something with the failure, like laugh at the user
 		window.alert("hahahahaha! NO!");
