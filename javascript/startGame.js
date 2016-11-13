@@ -1,4 +1,4 @@
-var execFile = require("child_process").execFile;
+ var execFile = require("child_process").execFile;
 var config = require("./config.json");
 
 $("#startButton").on("click", function(e) {
@@ -25,7 +25,16 @@ $("#startButton").on("click", function(e) {
 
 // this function calls our executable with an argument to pass the game ID
 function startGame(id) {
-	execFile("./bin/game", [`--args-g ${id}`], function(err, data) {
+	var path = "./bin/game";
+	var args = "--args-g:";
+	if (process.platform === "linux") {
+		path = `${path}.x86_64`;
+	}
+	if (process.platform === "darwin") {
+		path = "bin/game.app/Contents/MacOS/game";
+	}
+
+	execFile(path, [`${args}${id}`], function(err, data) {
 		if (err) {
 			console.log(err);
 		} else {
