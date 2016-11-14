@@ -1,7 +1,7 @@
 "use strict";
 
 const socket = require("socket.io-client");
-const config = require("./config.json");
+const config = require("../config.json");
 
 const io = socket.connect(`${config.site.apiHost}:${config.site.port}`);
 

@@ -25,6 +25,7 @@
     "eslint": "^3.10.0"
   },
   "dependencies": {
+    "electron-notifications": "^0.1.1",
     "socket.io-client": "^1.5.1"
   }
 }

@@ -1,5 +1,5 @@
 "use strict";
-// const config = require("./config.json");
+const config = require("../config.json");
 
 $("#signin").on("click", (e) => {
 	e.preventDefault();

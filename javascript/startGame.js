@@ -1,7 +1,7 @@
 "use strict";
 
 const execFile = require("child_process").execFile;
-const config = require("./config.json");
+// const config = require("../config.json");
 
 $("#startButton").on("click", (e) => {
 	e.preventDefault();

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game Client</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/bootstrap-social.css" rel="stylesheet">
+		<link href="../css/font-awesome.min.css" rel="stylesheet">
+		<link href="../css/login.css" rel="stylesheet">
+		<link href="../css/sidebar.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- messaging modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="form-control-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="form-control-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="send-message">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end messaging modal -->
+		<div class="fullscreen_bg" id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<li class="sidebar-brand">
+						<a href="#" id="userInfo">{{username}}</a></li>
+						<div id="placeholder">
+						</div>
+					</ul>
+				</div>
+				<!-- /#sidebar-wrapper -->
+				<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<div class="container-fluid">
+						<!-- Bottom Nav Bar -->
+						<nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+							<div class="container">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="../pages/lobby.html">
+										<img alt="Brand" src="../images/favicon.ico">
+									</a>
+									<a class="navbar-brand" href="../pages/lobby.html">
+										Game Client
+									</a>
+								</div>
+								<div class="nav navbar-nav navbar-right btn-group">
+								<button class="btn btn-danger navbar-btn btn-md" id="startButton">Start Game</button>
+								<button class="btn btn-warning navbar-btn">Game Store</button>
+								<a href="#menu-toggle" class="btn btn-primary navbar-btn" id="menu-toggle">Friends list</a>
+								<button class="btn btn-success navbar-btn">Account</button>
+							</div>
+							</div>
+						</nav>
+						<!-- end bottom navbar -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h1>Main lobby screen</h1>
+								<p>This is the main screen that will hold all your news updates and others.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+	</body>
+
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script src="../javascript/jquery.min.js"></script>
+	<script src="../javascript/bootstrap.min.js"></script>
+	<script src="../javascript/lobby.js"></script>
+
+	<!-- added scripts for testing -->
+	<script src="../javascript/startGame.js"></script>
+	<!-- end testing -->
+
+	<script>
+		// You can also require other files to run in this process
+		require('../renderer.js')
+	</script>
+
+<script>if (window.module) module = window.module;</script>
+
+</html>

@@ -28,8 +28,7 @@ body {
 	left: 0;
 	background-size: cover;
 	background-position: 50% 50%;
-	background-image: url("../images/color-splash.jpg");
-	background-repeat:repeat;
+	background-image: url("../images/download.jpg");
 }
 .form-signin {
 	max-width: 280px;

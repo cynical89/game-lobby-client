@@ -4,16 +4,18 @@ const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
+const icon = "./images/icon-games.png";
+
 // Keep a global reference of the window object, if you don"t, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
 function createWindow() {
 	// Create the browser window.
-	mainWindow = new BrowserWindow({width: 1280, height: 720});
+	mainWindow = new BrowserWindow({width: 1280, height: 720, resizable: false, icon: icon});
 
 	// and load the index.html of the app.
-	mainWindow.loadURL(`file://${__dirname}/index.html`);
+	mainWindow.loadURL(`file://${__dirname}/pages/index.html`);
 
 	// Open the DevTools.
 	mainWindow.webContents.openDevTools();
