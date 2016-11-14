@@ -1,7 +1,8 @@
 # Node Module Foler
 node_modules
 
-# Game Executables
+# Executables
+builds
 bin/game_Data
 bin/*.exe
 bin/*.x86_64
